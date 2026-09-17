@@ -1,0 +1,10 @@
+# Built binary (kept out of git; build with: go build -o txampp .)
+/txampp
+
+# Local environments created during development
+/.stack/
+
+# Go test/coverage artifacts
+*.test
+*.out
+coverage.*
