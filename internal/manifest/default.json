@@ -1,0 +1,265 @@
+{
+  "$comment": "txampp default component manifest. Artifacts are single-file static binaries with no system dependencies. PHP builds come from the static-php.dev bulk archive (https://static-php.dev); Caddy, Adminer and Mailpit come from GitHub Releases. Version discovery for PHP happens against the static-php.dev bulk listing; the versions pinned here are a known-good fallback.",
+  "schema": 1,
+  "generated": "2026-09-17T00:00:00Z",
+  "components": {
+    "caddy": {
+      "label": "Caddy",
+      "kind": "webserver",
+      "version": "2.11.4",
+      "files": {
+        "linux-amd64": [
+          {
+            "id": "bin",
+            "url": "https://github.com/caddyserver/caddy/releases/download/v2.11.4/caddy_2.11.4_linux_amd64.tar.gz",
+            "format": "tar.gz",
+            "bins": ["caddy"]
+          }
+        ],
+        "linux-arm64": [
+          {
+            "id": "bin",
+            "url": "https://github.com/caddyserver/caddy/releases/download/v2.11.4/caddy_2.11.4_linux_arm64.tar.gz",
+            "format": "tar.gz",
+            "bins": ["caddy"]
+          }
+        ],
+        "darwin-amd64": [
+          {
+            "id": "bin",
+            "url": "https://github.com/caddyserver/caddy/releases/download/v2.11.4/caddy_2.11.4_mac_amd64.tar.gz",
+            "format": "tar.gz",
+            "bins": ["caddy"]
+          }
+        ],
+        "darwin-arm64": [
+          {
+            "id": "bin",
+            "url": "https://github.com/caddyserver/caddy/releases/download/v2.11.4/caddy_2.11.4_mac_arm64.tar.gz",
+            "format": "tar.gz",
+            "bins": ["caddy"]
+          }
+        ],
+        "windows-amd64": [
+          {
+            "id": "bin",
+            "url": "https://github.com/caddyserver/caddy/releases/download/v2.11.4/caddy_2.11.4_windows_amd64.zip",
+            "format": "zip",
+            "bins": ["caddy.exe"]
+          }
+        ]
+      }
+    },
+    "php": {
+      "label": "PHP (static)",
+      "kind": "runtime",
+      "versions": {
+        "8.4": {
+          "version": "8.4.14",
+          "files": {
+            "linux-amd64": [
+              {
+                "id": "fpm",
+                "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.4.14-fpm-linux-x86_64.tar.gz",
+                "format": "tar.gz",
+                "bins": ["php-fpm"]
+              },
+              {
+                "id": "cli",
+                "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.4.14-cli-linux-x86_64.tar.gz",
+                "format": "tar.gz",
+                "bins": ["php"]
+              }
+            ],
+            "linux-arm64": [
+              {
+                "id": "fpm",
+                "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.4.14-fpm-linux-aarch64.tar.gz",
+                "format": "tar.gz",
+                "bins": ["php-fpm"]
+              },
+              {
+                "id": "cli",
+                "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.4.14-cli-linux-aarch64.tar.gz",
+                "format": "tar.gz",
+                "bins": ["php"]
+              }
+            ],
+            "darwin-amd64": [
+              {
+                "id": "fpm",
+                "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.4.14-fpm-macos-x86_64.tar.gz",
+                "format": "tar.gz",
+                "bins": ["php-fpm"]
+              },
+              {
+                "id": "cli",
+                "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.4.14-cli-macos-x86_64.tar.gz",
+                "format": "tar.gz",
+                "bins": ["php"]
+              }
+            ],
+            "darwin-arm64": [
+              {
+                "id": "fpm",
+                "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.4.14-fpm-macos-aarch64.tar.gz",
+                "format": "tar.gz",
+                "bins": ["php-fpm"]
+              },
+              {
+                "id": "cli",
+                "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.4.14-cli-macos-aarch64.tar.gz",
+                "format": "tar.gz",
+                "bins": ["php"]
+              }
+            ]
+          }
+        },
+        "8.5": {
+          "version": "8.5.8",
+          "files": {
+            "linux-amd64": [
+              {
+                "id": "fpm",
+                "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.5.8-fpm-linux-x86_64.tar.gz",
+                "format": "tar.gz",
+                "bins": ["php-fpm"]
+              },
+              {
+                "id": "cli",
+                "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.5.8-cli-linux-x86_64.tar.gz",
+                "format": "tar.gz",
+                "bins": ["php"]
+              }
+            ],
+            "linux-arm64": [
+              {
+                "id": "fpm",
+                "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.5.8-fpm-linux-aarch64.tar.gz",
+                "format": "tar.gz",
+                "bins": ["php-fpm"]
+              },
+              {
+                "id": "cli",
+                "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.5.8-cli-linux-aarch64.tar.gz",
+                "format": "tar.gz",
+                "bins": ["php"]
+              }
+            ],
+            "darwin-amd64": [
+              {
+                "id": "fpm",
+                "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.5.8-fpm-macos-x86_64.tar.gz",
+                "format": "tar.gz",
+                "bins": ["php-fpm"]
+              },
+              {
+                "id": "cli",
+                "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.5.8-cli-macos-x86_64.tar.gz",
+                "format": "tar.gz",
+                "bins": ["php"]
+              }
+            ],
+            "darwin-arm64": [
+              {
+                "id": "fpm",
+                "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.5.8-fpm-macos-aarch64.tar.gz",
+                "format": "tar.gz",
+                "bins": ["php-fpm"]
+              },
+              {
+                "id": "cli",
+                "url": "https://dl.static-php.dev/static-php-cli/bulk/php-8.5.8-cli-macos-aarch64.tar.gz",
+                "format": "tar.gz",
+                "bins": ["php"]
+              }
+            ]
+          }
+        }
+      },
+      "discovery": {
+        "list_url": "https://dl.static-php.dev/static-php-cli/bulk/?format=json",
+        "patterns": {
+          "linux-amd64": {
+            "fpm": "php-{version}-fpm-linux-x86_64.tar.gz",
+            "cli": "php-{version}-cli-linux-x86_64.tar.gz"
+          },
+          "linux-arm64": {
+            "fpm": "php-{version}-fpm-linux-aarch64.tar.gz",
+            "cli": "php-{version}-cli-linux-aarch64.tar.gz"
+          },
+          "darwin-amd64": {
+            "fpm": "php-{version}-fpm-macos-x86_64.tar.gz",
+            "cli": "php-{version}-cli-macos-x86_64.tar.gz"
+          },
+          "darwin-arm64": {
+            "fpm": "php-{version}-fpm-macos-aarch64.tar.gz",
+            "cli": "php-{version}-cli-macos-aarch64.tar.gz"
+          }
+        }
+      }
+    },
+    "adminer": {
+      "label": "Adminer",
+      "kind": "dbgui",
+      "version": "6.1.0",
+      "files": {
+        "*": [
+          {
+            "id": "app",
+            "url": "https://github.com/vrana/adminer/releases/download/v6.1.0/adminer-6.1.0.php",
+            "format": "file",
+            "dest": "adminer.php"
+          }
+        ]
+      }
+    },
+    "mailpit": {
+      "label": "Mailpit",
+      "kind": "smtp",
+      "version": "1.31.1",
+      "files": {
+        "linux-amd64": [
+          {
+            "id": "bin",
+            "url": "https://github.com/axllent/mailpit/releases/download/v1.31.1/mailpit-linux-amd64.tar.gz",
+            "format": "tar.gz",
+            "bins": ["mailpit"]
+          }
+        ],
+        "linux-arm64": [
+          {
+            "id": "bin",
+            "url": "https://github.com/axllent/mailpit/releases/download/v1.31.1/mailpit-linux-arm64.tar.gz",
+            "format": "tar.gz",
+            "bins": ["mailpit"]
+          }
+        ],
+        "darwin-amd64": [
+          {
+            "id": "bin",
+            "url": "https://github.com/axllent/mailpit/releases/download/v1.31.1/mailpit-darwin-amd64.tar.gz",
+            "format": "tar.gz",
+            "bins": ["mailpit"]
+          }
+        ],
+        "darwin-arm64": [
+          {
+            "id": "bin",
+            "url": "https://github.com/axllent/mailpit/releases/download/v1.31.1/mailpit-darwin-arm64.tar.gz",
+            "format": "tar.gz",
+            "bins": ["mailpit"]
+          }
+        ],
+        "windows-amd64": [
+          {
+            "id": "bin",
+            "url": "https://github.com/axllent/mailpit/releases/download/v1.31.1/mailpit-windows-amd64.zip",
+            "format": "zip",
+            "bins": ["mailpit.exe"]
+          }
+        ]
+      }
+    }
+  }
+}
